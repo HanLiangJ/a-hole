@@ -24,3 +24,18 @@ customized undo/redo logger module.
     3.操作记录：提供了将操作命令的指令和参数进行保存/读取的操作。   
         存在问题：读取操作未完善成功，仅支持读操作，但读取后还未实现重现历史记录的功能。
 ***
+
+### LogMaker.py
+
+a logger module using Singleton.
+
+一个使用单例模式的日志记录模块
+
+主要功能：
+
+```
+1.以日志记录形式输出到控制台/日志文件;
+2.记录异常信息：如LogMaker.info("this is info:",5);
+3.确认异常信息:LogMaker.check_error(condition,message,level);
+```
+
